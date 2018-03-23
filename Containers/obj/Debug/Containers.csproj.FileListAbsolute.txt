@@ -1,0 +1,7 @@
+E:\Documents\NET\DataStructures\Containers\bin\Debug\Containers.exe.config
+E:\Documents\NET\DataStructures\Containers\bin\Debug\Containers.exe
+E:\Documents\NET\DataStructures\Containers\bin\Debug\Containers.pdb
+E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.csprojResolveAssemblyReference.cache
+E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.csproj.CoreCompileInputs.cache
+E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.exe
+E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.pdb
