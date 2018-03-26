@@ -5,3 +5,10 @@ E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.csprojResolveAss
 E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.csproj.CoreCompileInputs.cache
 E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.exe
 E:\Documents\NET\DataStructures\Containers\obj\Debug\Containers.pdb
+D:\GIT\DataStructures\Containers\bin\Debug\Containers.exe.config
+D:\GIT\DataStructures\Containers\bin\Debug\Containers.exe
+D:\GIT\DataStructures\Containers\bin\Debug\Containers.pdb
+D:\GIT\DataStructures\Containers\obj\Debug\Containers.csprojResolveAssemblyReference.cache
+D:\GIT\DataStructures\Containers\obj\Debug\Containers.csproj.CoreCompileInputs.cache
+D:\GIT\DataStructures\Containers\obj\Debug\Containers.exe
+D:\GIT\DataStructures\Containers\obj\Debug\Containers.pdb
