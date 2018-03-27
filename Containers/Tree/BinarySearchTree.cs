@@ -25,6 +25,7 @@ namespace Containers.Tree
         }
 
         Node root;
+        int count = 10;
 
         public Node Successor(Node node)           // The nearest higher element
         {
@@ -133,5 +134,26 @@ namespace Containers.Tree
             }
         }
 
+        void print2DUtil(Node root, int space)
+        {
+            if (root == null)
+                return;
+
+            space += count;
+
+            print2DUtil(root.rightLink, space);
+
+            Console.WriteLine();
+            for (int i = count; i < space; i++)
+                Console.Write(" ");
+            Console.Write("{0}\n", root.value);
+
+            print2DUtil(root.leftLink, space);
+        }
+
+        public void DisplayTree(Node root)
+        {
+            print2DUtil(root, 0);
+        }
     }
 }

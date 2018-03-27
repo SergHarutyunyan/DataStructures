@@ -112,36 +112,62 @@ namespace Containers
             //Console.WriteLine(queueLinked.Front());
             //queueLinked.Print();
 
+            /*****************************************  Priority Queue *************************************/
+
+            PriorityQueueHeap priorityQueue = new PriorityQueueHeap(6);
+
+            priorityQueue.Push(15);
+            priorityQueue.Push(10);
+            priorityQueue.Push(35);
+            priorityQueue.Push(25);
+            priorityQueue.Push(20);
+            priorityQueue.Push(5);
+
+            priorityQueue.DisplayHeap();
+
+            Console.WriteLine($"Top() = {priorityQueue.Top()}");
+            Console.WriteLine();
+            Console.WriteLine("Popping...");
+            priorityQueue.Pop();
+            priorityQueue.DisplayHeap();
+
+            Console.WriteLine();
+            Console.WriteLine("Popping...");
+            priorityQueue.Pop();
+            priorityQueue.DisplayHeap();
+
             #endregion
 
             #region Tree
 
             /************************************ Binary Search Tree ****************************************/
 
-            BinarySearchTree binarySearchTree = new BinarySearchTree();
+            //BinarySearchTree binarySearchTree = new BinarySearchTree();
 
-            binarySearchTree.Insert(10);
-            binarySearchTree.Insert(15);
-            binarySearchTree.Insert(18);
-            binarySearchTree.Insert(17);
-            binarySearchTree.Insert(7);
-            binarySearchTree.Insert(9);
-            binarySearchTree.Insert(8);
-            binarySearchTree.Insert(4);
-            binarySearchTree.Insert(5);
+            //binarySearchTree.Insert(10);
+            //binarySearchTree.Insert(15);
+            //binarySearchTree.Insert(18);
+            //binarySearchTree.Insert(17);
+            //binarySearchTree.Insert(7);
+            //binarySearchTree.Insert(9);
+            //binarySearchTree.Insert(8);
+            //binarySearchTree.Insert(4);
+            //binarySearchTree.Insert(5);
+
+            //binarySearchTree.Print2D(binarySearchTree.Find(10));
 
             //Console.WriteLine(binarySearchTree.Predecessor(binarySearchTree.Find(10)).value);
             //Console.WriteLine(binarySearchTree.Successor(binarySearchTree.Find(15)).value);
-            Console.WriteLine();
-
-
-            //binarySearchTree.PostorderPrint(binarySearchTree.Find(10));
-
-            //binarySearchTree.PrintInorder(binarySearchTree.Find(10));
-
-            //binarySearchTree.Remove(15);
             //Console.WriteLine();
-            //binarySearchTree.PrintInorder(binarySearchTree.Find(10));
+
+            //binarySearchTree.Remove(7);
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+
+            //binarySearchTree.DisplayTree(binarySearchTree.Find(10));
 
             #endregion
 
