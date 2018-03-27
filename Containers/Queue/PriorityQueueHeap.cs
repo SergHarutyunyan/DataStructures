@@ -105,6 +105,5 @@ namespace Containers.Queue
                 Console.WriteLine("\n" + dots + dots); 
             }
         }  
-
     }
 }

@@ -114,27 +114,40 @@ namespace Containers
 
             /*****************************************  Priority Queue *************************************/
 
-            PriorityQueueHeap priorityQueue = new PriorityQueueHeap(6);
+            //PriorityQueueHeap priorityQueue = new PriorityQueueHeap(6);
 
-            priorityQueue.Push(15);
-            priorityQueue.Push(10);
-            priorityQueue.Push(35);
-            priorityQueue.Push(25);
-            priorityQueue.Push(20);
-            priorityQueue.Push(5);
+            //priorityQueue.Push(15);
+            //priorityQueue.Push(10);
+            //priorityQueue.Push(35);
+            //priorityQueue.Push(25);
+            //priorityQueue.Push(20);
+            //priorityQueue.Push(5);
 
-            priorityQueue.DisplayHeap();
+            //priorityQueue.DisplayHeap();
 
-            Console.WriteLine($"Top() = {priorityQueue.Top()}");
-            Console.WriteLine();
-            Console.WriteLine("Popping...");
-            priorityQueue.Pop();
-            priorityQueue.DisplayHeap();
+            //Console.WriteLine($"Top() = {priorityQueue.Top()}");
+            //Console.WriteLine();
+            //Console.WriteLine("Popping...");
+            //priorityQueue.Pop();
+            //priorityQueue.DisplayHeap();
 
-            Console.WriteLine();
-            Console.WriteLine("Popping...");
-            priorityQueue.Pop();
-            priorityQueue.DisplayHeap();
+            //Console.WriteLine();
+            //Console.WriteLine("Popping...");
+            //priorityQueue.Pop();
+            //priorityQueue.DisplayHeap();
+
+            /*************  Heap Sort **********/
+
+            //int[] array = new int[5];
+            //array[0] = 7;
+            //array[1] = 15;
+            //array[2] = 4;
+            //array[3] = 12;
+            //array[4] = 1;
+
+            //customHeapSort(array, 5);
+
+            //for (int i = 0; i < 5; i++) Console.Write(array[i] + " ");
 
             #endregion
 
@@ -173,5 +186,23 @@ namespace Containers
 
             Console.Read();
         }
+
+        #region Heap Sort
+
+        private static void customHeapSort(int[] arr, int size)             // O(n*log(n))
+        {
+            PriorityQueueHeap priorityQueue = new PriorityQueueHeap(size);
+
+            for (int i = 0; i < size; i++)
+                priorityQueue.Push(arr[i]);
+
+            for (int i = 0; i < size; i++)
+            {
+                arr[i] = priorityQueue.Top();
+                priorityQueue.Pop();
+            }
+        }
+
+        #endregion
     }
 }
