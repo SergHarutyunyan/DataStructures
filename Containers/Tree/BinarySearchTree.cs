@@ -79,10 +79,7 @@ namespace Containers.Tree
                 Console.WriteLine("Specified node doesn't exist in tree.");
                 return;
             }
-
-            if (current.parent == null)                                              // if current node is a root
-                root = current.rightLink;
-
+         
             Node next;
 
             if (current.leftLink == null && current.rightLink == null)                // if current node hasn't children
@@ -153,7 +150,9 @@ namespace Containers.Tree
 
         public void DisplayTree(Node root)
         {
+            Console.WriteLine(new string('-',30));
             print2DUtil(root, 0);
+            Console.WriteLine(new string('-', 30));
         }
     }
 }

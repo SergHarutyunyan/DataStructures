@@ -1,4 +1,5 @@
-﻿using Containers.Queue;
+﻿using Containers.Hashing;
+using Containers.Queue;
 using Containers.Stack;
 using Containers.Tree;
 using System;
@@ -17,27 +18,29 @@ namespace Containers
 
             /********************************** Stack Contigous ****************************************/
 
-
             //StackContiguous<int> stackContiguous = new StackContiguous<int>(5);
 
             //stackContiguous.Pop();
+            //Console.WriteLine("\nTop()");
             //stackContiguous.Top();
+            //Console.WriteLine();
 
             //stackContiguous.Push(2);
             //stackContiguous.Push(1);
             //stackContiguous.Push(6);
-            //Console.WriteLine(stackContiguous.Top());
+            //Console.WriteLine("\nTop() = " + stackContiguous.Top());
             //stackContiguous.Print();
 
             //stackContiguous.Push(5);
             //stackContiguous.Push(4);
             //stackContiguous.Push(8);
-            //Console.WriteLine(stackContiguous.Top());
+            //Console.WriteLine();
+            //Console.WriteLine("\nTop() = " + stackContiguous.Top());
             //stackContiguous.Print();
 
             //stackContiguous.Pop();
             //stackContiguous.Pop();
-            //Console.WriteLine(stackContiguous.Top());
+            //Console.WriteLine("\nTop() = " + stackContiguous.Top());
             //stackContiguous.Print();
 
 
@@ -46,21 +49,25 @@ namespace Containers
             //StackLinked<int> stackLinked = new StackLinked<int>();
 
             //stackLinked.Pop();
-            //Console.WriteLine(stackLinked.Top());
+            //Console.WriteLine(stackLinked.Top()); Console.WriteLine();
 
             //stackLinked.Push(5);
             //stackLinked.Push(6);
             //stackLinked.Push(7);
-            //Console.WriteLine(stackLinked.Top());
-            //stackLinked.Print();
+            //Console.WriteLine();
+            //Console.WriteLine($"Top() = " + stackLinked.Top()); Console.WriteLine();
+            //stackLinked.Print(); Console.WriteLine();
 
             //stackLinked.Push(9);
             //stackLinked.Push(2);
             //stackLinked.Push(1);
+            //Console.WriteLine();
+            //stackLinked.Print(); Console.WriteLine();
 
             //stackLinked.Pop();
             //stackLinked.Pop();
-            //Console.WriteLine(stackLinked.Top());
+            //Console.WriteLine();
+            //Console.WriteLine($"Top() = " + stackLinked.Top()); Console.WriteLine();
             //stackLinked.Print();
 
             #endregion
@@ -93,7 +100,7 @@ namespace Containers
 
             //QueueLinked<char> queueLinked = new QueueLinked<char>();
 
-            //Console.WriteLine(queueLinked.Front()); 
+            //Console.Write(queueLinked.Front());
             //queueLinked.Pop();
 
             //queueLinked.Push('c');
@@ -167,20 +174,47 @@ namespace Containers
             //binarySearchTree.Insert(4);
             //binarySearchTree.Insert(5);
 
-            //binarySearchTree.Print2D(binarySearchTree.Find(10));
+            //binarySearchTree.DisplayTree(binarySearchTree.Find(10));
 
             //Console.WriteLine(binarySearchTree.Predecessor(binarySearchTree.Find(10)).value);
             //Console.WriteLine(binarySearchTree.Successor(binarySearchTree.Find(15)).value);
             //Console.WriteLine();
 
             //binarySearchTree.Remove(7);
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine();
-
             //binarySearchTree.DisplayTree(binarySearchTree.Find(10));
+
+            //binarySearchTree.Remove(10);
+            //binarySearchTree.DisplayTree(binarySearchTree.Find(9));
+
+            #endregion
+
+            #region Hash Tables
+
+            /************************************ Close Addressing Hash Table ****************************************/
+
+            //HashTableCA hashTable = new HashTableCA(5);
+
+            ////hashTable.Remove(10);
+
+            //hashTable.Insert(5);
+            //hashTable.Insert(7);
+            //hashTable.Insert(6);
+            //hashTable.Insert(3);
+            //hashTable.Insert(4);
+            //hashTable.Insert(1);
+            //hashTable.Insert(2);
+            //hashTable.Insert(9);
+            //hashTable.Display();
+
+            //Console.WriteLine(); Console.WriteLine();
+
+            //hashTable.Remove(6);
+            //hashTable.Display();
+
+            //Console.WriteLine(); Console.WriteLine();
+
+            //hashTable.Remove(1);
+            //hashTable.Display();
 
             #endregion
 

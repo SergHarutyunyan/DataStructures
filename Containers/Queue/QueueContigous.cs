@@ -49,7 +49,7 @@ namespace Containers.Queue
 
         public void Pop()
         {
-            if (!empty())
+            if (!empty()) 
                 front = (front + 1 < size) ? front + 1 : 0;
             else
                 Console.WriteLine("Queue is empty.");

@@ -41,9 +41,13 @@ namespace Containers.Stack
         public void Push(T value)
         {
             if (empty())
+            {
+                Console.WriteLine($"Pushing value {value}");
                 top = new Node(value, null);
+            }
             else
             {
+                Console.WriteLine($"Pushing value {value}");
                 Node temp = new Node(value, top);
                 top = temp;
             }
@@ -53,6 +57,7 @@ namespace Containers.Stack
         {
             if (!empty())
             {
+                Console.WriteLine("Popping");
                 top = top.next;
             }
             else
@@ -63,6 +68,7 @@ namespace Containers.Stack
 
         public void Print()
         {
+            Console.WriteLine("Displaying stack.");
             Node temp = top;
             while (temp != null)
             {

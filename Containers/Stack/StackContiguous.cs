@@ -39,11 +39,12 @@ namespace Containers.Stack
         {
             if (!empty())
             {
+                Console.WriteLine("Popping");
                 top--;
             }
             else
             {
-                Console.WriteLine("Stack is empty.");
+                Console.WriteLine("Popping - Stack is empty.");
             }
         }
 
@@ -51,21 +52,23 @@ namespace Containers.Stack
         {
             if (!full())
             {
+                Console.WriteLine($"Pushing {value}");
                 arr[++top] = value;
             }
             else
             {
-                Console.WriteLine("Stack is full.");
+                Console.WriteLine($"Can't Push value {value} - Stack is full.");
             }         
         }
 
         public void Print()
         {
+            Console.WriteLine("\nDisplaying Stack.");
             for (int i = 0; i <= top; i++)
             {
                 Console.Write(arr[i] + "->");
             }
-            Console.WriteLine();
+            Console.WriteLine("\n");
         }
     }
 }
