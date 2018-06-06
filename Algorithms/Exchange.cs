@@ -15,10 +15,11 @@ namespace Algorithms
         /// <param name="i"> index </param>
         /// <param name="j"> index </param>
         public static void Swap(int[] array, int i, int j)
-        {      
-            array[i] = array[i] + array[j];
-            array[j] = array[i] - array[j];
-            array[i] = array[i] - array[j];          
+        {
+            int temp;
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
     }
 }
