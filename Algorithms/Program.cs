@@ -13,6 +13,7 @@ namespace Algorithms
         static void Main(string[] args)
         {
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10 };
+            int[] arrWithDuplicates = { 1, 2, 3, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10, 10, 10 };
 
             //Shuffle.KnuthShuffle(arr);
             //printArray(arr);
@@ -27,11 +28,20 @@ namespace Algorithms
             //Sorting.MergeSortWithRecursion(arr, extraArrayForMergeSort, 0, arr.Length - 1);
             //printArray(arr);
 
-            Shuffle.KnuthShuffle(arr);
-            printArray(arr);
+            //Shuffle.KnuthShuffle(arr);
+            //printArray(arr);
 
-            Sorting.QuickSort(arr, 0, arr.Length - 1);
-            printArray(arr);
+            //Sorting.QuickSort(arr, 0, arr.Length - 1);
+            //printArray(arr);
+
+            //int a = Sorting.QuickSelect(arr, 6);
+
+
+            Shuffle.KnuthShuffle(arrWithDuplicates);
+            printArray(arrWithDuplicates);
+
+            Sorting.QuickSort3Way(arrWithDuplicates, 0, arrWithDuplicates.Length - 1);
+            printArray(arrWithDuplicates);
 
 
             Console.Read();

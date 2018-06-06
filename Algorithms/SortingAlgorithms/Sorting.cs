@@ -111,7 +111,42 @@ namespace Algorithms.SortingAlgorithms
             return j;                           // Return index of item now known to be in place
         }
 
+        public static int QuickSelect(int[] arr, int k)
+        {
+            Shuffling.Shuffle.KnuthShuffle(arr);
+            int low = 0, high = arr.Length - 1;
 
+            while(high > low)
+            {
+                int j = partition(arr, low, high);
+
+                if      (j < k) low = j + 1;
+                else if (j > k) high = j - 1;
+                else            return arr[k];
+            }
+
+            return arr[k];
+        }
+
+        public static void QuickSort3Way(int[] unsortedArray, int low, int high)
+        {
+            if (high <= low) return;
+            int lt = low, gt = high;
+            int dupl = unsortedArray[low];
+            int i = low;
+
+            while(i <= gt)
+            {
+                int cmp = unsortedArray[i].CompareTo(dupl);
+
+                if      (cmp < 0)   Exchange.Swap(unsortedArray, lt++, i++);
+                else if (cmp > 0)   Exchange.Swap(unsortedArray, i, gt--);
+                else                i++;
+            }
+
+            QuickSort3Way(unsortedArray, low, lt - 1);
+            QuickSort3Way(unsortedArray, gt + 1, high);
+        }
 
     }
 }
