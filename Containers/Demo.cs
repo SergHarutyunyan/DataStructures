@@ -120,6 +120,29 @@ namespace Containers
             //Console.WriteLine(queueLinked.Front());
             //queueLinked.Print();
 
+            /********************************************* Queue Array Resizing **********************************************/
+
+            QueueArrayResizing<string> queueArrayResizing = new QueueArrayResizing<string>();
+            queueArrayResizing.Enqueue("a");
+            queueArrayResizing.Enqueue("b");
+            queueArrayResizing.Enqueue("c");
+            queueArrayResizing.Enqueue("d");
+
+            queueArrayResizing.Print();
+
+            queueArrayResizing.Dequeue();
+            queueArrayResizing.Print();
+
+            queueArrayResizing.Dequeue();
+            queueArrayResizing.Dequeue();
+            queueArrayResizing.Dequeue();
+
+            queueArrayResizing.Enqueue("e");
+            queueArrayResizing.Enqueue("f");
+            queueArrayResizing.Enqueue("g");
+            queueArrayResizing.Enqueue("h");
+
+
             /*****************************************  Priority Queue *************************************/
 
             //PriorityQueueHeap priorityQueue = new PriorityQueueHeap(6);

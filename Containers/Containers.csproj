@@ -46,17 +46,18 @@
     <Compile Include="Hashing\HashTableCA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue\PriorityQueueHeap.cs" />
+    <Compile Include="Queue\QueueArrayResizing.cs" />
     <Compile Include="Queue\QueueContigous.cs" />
     <Compile Include="Queue\QueueLinked.cs" />
     <Compile Include="Stack\StackContiguous.cs" />
     <Compile Include="Stack\StackLinked.cs" />
     <Compile Include="Tree\BinarySearchTree.cs" />
+    <Compile Include="Union-Find\QuickUnion.cs" />
+    <Compile Include="Union-Find\WeightedQUWithPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Union-Find\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,7 @@
+D:\GIT\DataStructures\Algorithms\bin\Debug\Algorithms.exe.config
+D:\GIT\DataStructures\Algorithms\bin\Debug\Algorithms.exe
+D:\GIT\DataStructures\Algorithms\bin\Debug\Algorithms.pdb
+D:\GIT\DataStructures\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+D:\GIT\DataStructures\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\GIT\DataStructures\Algorithms\obj\Debug\Algorithms.exe
+D:\GIT\DataStructures\Algorithms\obj\Debug\Algorithms.pdb
