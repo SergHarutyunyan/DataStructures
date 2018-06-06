@@ -20,12 +20,12 @@ namespace Algorithms
             //Sorting.ShellSort(arr);
             //printArray(arr);
 
-            Shuffle.KnuthShuffle(arr);
-            printArray(arr);
+            //Shuffle.KnuthShuffle(arr);
+            //printArray(arr);
 
-            int[] extraArrayForMergeSort = new int[arr.Length];
-            Sorting.MergeSortWithRecursion(arr, extraArrayForMergeSort, 0, arr.Length - 1);
-            printArray(arr);
+            //int[] extraArrayForMergeSort = new int[arr.Length];
+            //Sorting.MergeSortWithRecursion(arr, extraArrayForMergeSort, 0, arr.Length - 1);
+            //printArray(arr);
 
             //Shuffle.KnuthShuffle(arr);
             //printArray(arr);
