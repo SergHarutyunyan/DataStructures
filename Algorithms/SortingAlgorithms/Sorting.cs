@@ -78,5 +78,40 @@ namespace Algorithms.SortingAlgorithms
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="unsortedArray"></param>
+        /// <param name="low"></param>
+        /// <param name="high"></param>
+        public static void QuickSort(int[] unsortedArray, int low, int high)
+        {
+            if (high <= low) return;
+            int j = partition(unsortedArray, low, high);
+            QuickSort(unsortedArray, low, j - 1);
+            QuickSort(unsortedArray, j + 1, high);
+        }
+
+        private static int partition(int[] arr, int low, int high)
+        {
+            int i = low, j = high + 1;
+            while (true)
+            {
+                while (arr[++i] < arr[low])     // Find item on left to swap
+                    if (i == high) break;
+
+                while (arr[low] < arr[--j])     // Find item on right to swap
+                    if (j == low) break;
+
+                if (i >= j) break;              // Check if pointers cross
+                Exchange.Swap(arr, i, j);       // Swap
+            }
+
+            Exchange.Swap(arr, low, j);         // Swap with partitioning item
+            return j;                           // Return index of item now known to be in place
+        }
+
+
+
     }
 }

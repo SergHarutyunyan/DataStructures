@@ -27,11 +27,12 @@ namespace Algorithms
             //Sorting.MergeSortWithRecursion(arr, extraArrayForMergeSort, 0, arr.Length - 1);
             //printArray(arr);
 
-            //Shuffle.KnuthShuffle(arr);
-            //printArray(arr);
+            Shuffle.KnuthShuffle(arr);
+            printArray(arr);
 
-            //Sorting.MergeSortWithoutRecursion(arr);
-            //printArray(arr);
+            Sorting.QuickSort(arr, 0, arr.Length - 1);
+            printArray(arr);
+
 
             Console.Read();
         }
