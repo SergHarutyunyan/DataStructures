@@ -15,8 +15,13 @@ namespace Algorithms
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10 };
             int[] arrWithDuplicates = { 1, 2, 3, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10, 10, 10 };
 
-            //Shuffle.KnuthShuffle(arr);
-            //printArray(arr);
+            Shuffle.KnuthShuffle(arr);
+            Console.Write("Shuffled array - ");
+            printArray(arr);
+
+            Shuffle.KnuthShuffle(arrWithDuplicates);
+            Console.Write("Shuffled array with duplicates - ");
+            printArray(arrWithDuplicates);
 
             //Sorting.ShellSort(arr);
             //printArray(arr);
@@ -36,13 +41,16 @@ namespace Algorithms
 
             //int a = Sorting.QuickSelect(arr, 6);
 
+            //Shuffle.KnuthShuffle(arrWithDuplicates);
+            //printArray(arrWithDuplicates);
 
-            Shuffle.KnuthShuffle(arrWithDuplicates);
-            printArray(arrWithDuplicates);
+            //Sorting.QuickSort3Way(arrWithDuplicates, 0, arrWithDuplicates.Length - 1);
+            //printArray(arrWithDuplicates);
 
-            Sorting.QuickSort3Way(arrWithDuplicates, 0, arrWithDuplicates.Length - 1);
-            printArray(arrWithDuplicates);
-
+            //BinaryHeap binaryHeap = new BinaryHeap(arr);
+            //binaryHeap.HeapSort();
+            //Console.Write("HeapSorted array - ");
+            //printArray(arr);
 
             Console.Read();
         }
